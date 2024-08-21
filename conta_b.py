@@ -9,7 +9,6 @@ class Conta_bancaria:
         return f"Nome do titular: {self.__titular}\n, CPF: {self.__cpf}\n, Saldo bancário: {self.__saldo}"
 
     def depositar(self, deposito):
-        self.__saldo = 20000.00
         x = self.__saldo + deposito
         return f"Com o depósito de R${deposito}, seu saldo aumentou para R${x}"
 
