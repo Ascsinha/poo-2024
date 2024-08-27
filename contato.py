@@ -1,6 +1,6 @@
 from data import Data
 
-class Contato:
+class Contato(Data):
 
     def __init__(self, nome, telefone, data_nascimento):
         self.__nome = nome

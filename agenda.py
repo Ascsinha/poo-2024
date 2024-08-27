@@ -1,6 +1,6 @@
 from contato import Contato
 
-class Agenda:
+class Agenda(Contato):
 
     def __init__(self):
         self.__contato = []
