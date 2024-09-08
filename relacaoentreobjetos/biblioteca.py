@@ -3,7 +3,7 @@ from livro3 import Livro
 class Biblioteca(Livro):
 
     def __init__(self):
-        self.__livro = []
+        self.__livro = [Livro]
 
     def adicionarLivro(self, livro):
         self.__livro.append(livro)
@@ -22,4 +22,9 @@ class Biblioteca(Livro):
         return False
 
     def listarLivros(self):
-        print(self.__livro)
+        if not self.__livro:
+            print("Biblioteca vazia.")
+        else:
+            for livro in self.__livro:
+                livro.exibirLivro()
+

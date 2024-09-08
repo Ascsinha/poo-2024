@@ -24,3 +24,6 @@ class Livro(Autor):
 
     def setAnoPublicacao(self, anoPublicacao):
         self.__anoPublicacao = anoPublicacao
+
+    def exibirLivro(self):
+        print(f"Título: {self.__titulo}\n Autor: {self.__autor.exibirAutor()}\n Ano de publicação: {self.__anoPublicacao}")

@@ -24,4 +24,4 @@ class Autor:
         self.__dataNascimento = dataNascimento
 
     def exibirAutor(self):
-        print(f"Nome: {self.__nome}\n Nacionalidade: {self.__nacionalidade}\n Data de nascimento: {self.__dataNascimento}")
+        print(f"Nome: {self.__nome.getNome()}\n Nacionalidade: {self.__nacionalidade.getNacionalidade()}\n Data de nascimento: {self.__dataNascimento.getDataNascimento()}")
