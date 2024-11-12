@@ -1,5 +1,3 @@
-from venda import Venda
-
 class Produto:
     
     def __init__(self, nome, preco, quantidade):
@@ -34,4 +32,7 @@ class Produto:
 
     @classmethod
     def from_dict(cls, dados):
-        return cls(dados['nome'], Venda.from_dict(dados['preco']), dados['quantidade'])
+        nome = dados['nome']
+        preco = dados['preco']
+        quantidade = dados['quantidade']
+        return cls(nome, preco, quantidade)

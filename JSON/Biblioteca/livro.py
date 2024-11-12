@@ -31,7 +31,3 @@ class Livro:
             "autor": self.__autor.to_dict(),
             "anoPublicacao": self.__anoPublicacao
         }
-
-    @classmethod
-    def from_dict(cls, dados):
-        return cls(dados['titulo'], Autor.from_dict(dados['autor']), dados['anoPublicacao'])

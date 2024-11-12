@@ -35,5 +35,5 @@ class Biblioteca:
     def salvarEmJson(self, arquivo):
         objetos_dict = [obj.to_dict() for obj in self.__livros]
         dados_em_json = json.dumps(objetos_dict)
-        with open(arquivo, 'w') as arquivo:
+        with open(arquivo, 'w', indent=4) as arquivo:
             arquivo.write(dados_em_json)
