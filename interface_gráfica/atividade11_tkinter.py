@@ -17,7 +17,7 @@ rotulo3.grid(row=2, column=0)
 rotulo3["font"] = ("Arial", "12", "bold")
 rotulo3["width"] = 50
 
-botao_sair = Button(janela,)
+botao_sair = Button(janela)
 botao_sair.grid(row=4, column=0, pady=10)
 botao_sair["bg"] = "blue"
 botao_sair["fg"] = "white"
