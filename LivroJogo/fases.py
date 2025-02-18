@@ -3,14 +3,11 @@ from util import JogoUtil
 
 class FaseInicial(Fase):
     def __init__(self):
-        self.__descricao ='''A aventura começa!
-        Ao chegar no hospital você entra em busca de um medicamento.
-        Você encontra uma recepção do lado esquerdo, mas a porta está 
-        trancada. Tem outro caminho no lado direito
-        que leva a uma ala psiquiátrica. Qual camiho você vai 
-        escolher?
+        self.__descricao ='''Ana era uma garota que morava em uma região fria. Um dia, sua mãe lhe contou um relato sobre pessoas que foram infectadas pelo Cordyceps no sul, um fungo que causava mutações genéticas, consequentemente mudanças físicas e comportamentais. Isso causou curiosidade na menina. Cética com o relato, Ana, acompanhada do seu irmão mais novo, pegou sua mochila e partiu em direção ao desconhecido. \n\n
+
+        Por um longo período de tempo, Ana andou até finalmente chegar no sul. Ela, junto com o irmão, chegou em uma cidade deserta. Observando a cidade percebeu-se que nela não havia habitantes. 
         '''
-        self.__opcoes = ["Seguir pela esquerda", "Seguir pela direita"]
+        self.__opcoes = ["Mesmo assim, Ana decidiu ficar e explorar.", "Ana viu que seria perigoso ficar e explorar, e decidiu voltar com seu irmão para o vilarejo."]
 
     def executar(self):
         print("\nFase Inicial")
